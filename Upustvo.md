@@ -9,3 +9,16 @@
 #sa komandom git add pa ime fajla ili *
 
 8. Commiting se vrsi pomocu komande git commit -m '-m oznacava da dajemo commitu poruku' poruka mora biti deskriptivna da bi dr. koji rade na projektu mogli shvatiti o cemu se rad
+9. Sa komandom git log mozemo vidjeti sve promjene koje smo napravili na fajlovima,a mozemo napisati i git log --pretty=oneline da bi nam svi logovi bili na jednoj liniji i pregledniji, ili git log --pretty=oneline -2 da nam prikaze dvije log poruke
+10. Da bi ove promjene snimili u skladiste tj. repository moramo koristiti komandu git push origin master, koja je nasa glavna grana
+11. Sa komandom git pull povlacimo sve izmjene sa GitHub-a na nase lokalne fajlove na kop.,ako je neko npr. mijenjao nase fajlove na GitHub-u ili sl.
+
+#Braching je proces kreiranja novog pointera koji nam omogucava da radimo na istom codu ali u sigurnom okruzenju gdje mozemo raditi sta zelimo i odbaciti promjene koje ne zelimo,a ako smo zadovoljni mozemo ovu granu spojiti sa dr. granom
+
+12. Da bi napravili granu koristimo komandu giti branch hello-england,'hello-england je ime grane',a sa opcijom -b automatski nas prebacuje na novu granu
+13. Sa komandom git checkout hello-england se prebacujemo manuelno na tu granu
+14. Sa komandom git branch merge hello-england spajamo ovu granu sa master granom
+15. Sa komandom git branch -d hello-england brisemo ovu granu
+16. Sa komandom git push origin --delete hello-england brisemo granu sa GitHub stranice
+17. Za fajlove koje ne zelimo ucitiati na GitHub npr. koji sadrze sifre od baze podataka ili od javnih API napravimo .gitignore fajl u nasem folderu u kome radimo i u njemu upisemo fajl koji zelimo da izostavimo
+18. 
